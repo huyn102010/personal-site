@@ -10,7 +10,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 
 html {
-  /* font color  */
-  color :#EEE;  
-  background: #111;
+  /* font-size and line-height are two most important
+  because it needs to fit the screen of the device. 
+
+  When running http-server, use the second ip address on phone or tablet 
+  */
+
+  font-size: 1.125em /* 18/16 = 1.125 (16 is default broswer font size*/
+  line-height: 26.4px /* 22px or higher, so 26/22 = 1.something em */
 }
