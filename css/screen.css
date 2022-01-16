@@ -24,6 +24,13 @@ html {
 
 }
 
+h1,
+h2,
+h3,
+p{
+  padding-bottom: 28px;
+}
+
 /** A quick baseline grid overlay using css+svg. Inspired by [Basehold.it](https://basehold.it/). @author leshido */
 .g body { position: relative; }
 
