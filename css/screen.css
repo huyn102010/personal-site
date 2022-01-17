@@ -44,13 +44,37 @@ a {
 /* By default, img tag is in-line, block gets rid of white space around edges */
 /* make sure the image is responsive to different screen size */
 
-/* 
 img {
   display: block;  
 
   max-width: 100%; 
 }
-*/
+
+/* Figure element fundamental */
+
+figure{
+  position: relative;
+}
+
+figcaption{
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  /* Really light gray */
+  color: #EEE; 
+  /* Really dark gray, with alpha channel at the end for transparency setting */
+  background: rgba(20,20,20,0.3);
+  display: none;
+}
+/* shoudl invoke javascript here when hover over images, not appropriate here!! because no hovering in mobile devices */
+figure:hover figcaption{
+  display: block;
+}
+
+/* single out a class when associate with li, this is to add space at bottom of each imaga */
+.photo-gallery li {
+  margin-bottom: 14px //half of line height 
+}
 
 
 /** A quick baseline grid overlay using css+svg. Inspired by [Basehold.it](https://basehold.it/). @author leshido */
