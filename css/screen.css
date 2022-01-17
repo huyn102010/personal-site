@@ -31,13 +31,26 @@ p{
   padding-bottom: 28px;
 }
 
-
+/* anchor tag note */
 a {
   /* Get rid of default blue underline in hyperlink, however, make the page less 
   acessible; Can be adjusted by making the line thinner */
   text-decoration: none;
 }
 
+
+/*  Image tag Fundamental */
+
+/* By default, img tag is in-line, block gets rid of white space around edges */
+/* make sure the image is responsive to different screen size */
+
+/* 
+img {
+  display: block;  
+
+  max-width: 100%; 
+}
+*/
 
 
 /** A quick baseline grid overlay using css+svg. Inspired by [Basehold.it](https://basehold.it/). @author leshido */
