@@ -69,7 +69,8 @@ figcaption{
   color: #EEE; 
   /* Really dark gray, with alpha channel at the end for transparency setting */
   background: rgba(20,20,20,0.3);
-  display: none; // not accessible to screen reader 
+  /* using display here is not accessible to screen reader  */
+  display: none; 
 }
 /* shoudl invoke javascript here when hover over images, not appropriate here!! because no hovering in mobile devices */
 figure:hover figcaption{
