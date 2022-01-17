@@ -8,6 +8,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Begin site styles below */
 
+/* box style, apply to all html elements */
+*{
+  box-sizing: border-box;
+}
 
 html {
   /* font-size and line-height are two most important
@@ -58,13 +62,14 @@ figure{
 
 figcaption{
   position: absolute;
-  width: 100%;
+  /* to make sure text has its own line, and not embedded in image */
+  width: 100%; 
   bottom: 0px;
   /* Really light gray */
   color: #EEE; 
   /* Really dark gray, with alpha channel at the end for transparency setting */
   background: rgba(20,20,20,0.3);
-  display: none;
+  display: none; // not accessible to screen reader 
 }
 /* shoudl invoke javascript here when hover over images, not appropriate here!! because no hovering in mobile devices */
 figure:hover figcaption{
@@ -73,7 +78,9 @@ figure:hover figcaption{
 
 /* single out a class when associate with li, this is to add space at bottom of each imaga */
 .photo-gallery li {
-  margin-bottom: 14px //half of line height 
+
+  /* half of line height  */
+  margin-bottom: 14px 
 }
 
 
