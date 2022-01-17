@@ -1,0 +1,69 @@
+/* In general, this is how CSS priorities should work */
+/* 1. Mobile first (start small) */
+/* 2. Media Queries */
+/* 3. JS state styles */
+
+
+
+
+/* Start small first, i.e responsive design mode because when we start small, we only have space to think about. (i.e that's when media query come in, essentially an if-else statement in css-syntax) */
+/* color */
+/* typography */
+/* vertical spacing */
+
+ /* Media query example. If viewport is at least 300 px width, apply these styles. Media queries meant to tweak small stuffs, not completely change everything */
+  @media screen and (min-width:300px){
+    figure{
+      position: relative;
+    }
+    figcaption {
+      position:absolute;
+      bottom: 0px;
+      width: 100%;
+      padding: 6px;
+    }
+  }
+  /* Media query acts as a break point that is adaptable to any types of devices, and unique to your own contents, so experiment with it. Media query can be replaced by grid/flexbox layout */
+
+@media screen and (min-width: 1000px){
+  .photo gallery {
+    display: grid;
+    /* Intrinsic design alert */
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-gap: 24px;
+    gap: 24px;
+  }
+}
+
+
+
+/* modular scale: https://www.modularscale.com/?23&px&1.5 */
+
+/* SMACSS rules: http://smacss.com/book/categorizing, look at core on right hand size - 90% of everything */
+
+/* SMACSS in order */
+
+/* 1 */
+/* Base styles */
+/* Selectors: element */
+/* Styles: typography, color, etc */
+
+/* 2 */
+/* Layout Rules */
+/* Selectors: IDs, possibly classes */
+/* Styles: layout, spacing, alignment */
+
+/* 3 */
+/* Module Rules */
+/* Selectors: classes, possible IDs */
+/* Styles: Alignment, color, special, repeating stuffs */
+/* i.e .photo-gallery li */
+
+/* 4 */
+/* State Rules, relevant for Javascript */
+/* Selectors: classes from JS */
+/* Styles: just about anything!!! */
+/* Media Queries */
+
+/* 5 */
+/* Theme Rules, i.e for light vs dark mode */
