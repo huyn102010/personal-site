@@ -1,0 +1,45 @@
+ /* reset style */
+
+
+ *{
+   box-sizing: border-box;
+ }
+html {
+  font-size: 22px;
+  line-height: 18px;
+  padding: 22px;
+
+}
+
+ img {
+   
+   display: block;
+   /* Image cannot be wider than viewport, no horizontal scroll */
+   max-width: 100%;
+ }
+
+
+ .good-float {
+   padding-top: 11px;
+   padding-bottom: 11px;
+ }
+ @media screen and (min-width: 520px) {
+
+  .good-float::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  /* go inside good-float class, look for figure element */
+  .good-float figure{
+    width: 50%;
+    float: left;
+  }
+
+  .good-float p{
+    padding-top: 11px;
+  }
+
+ }
+
+  
