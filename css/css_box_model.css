@@ -1,0 +1,32 @@
+
+/* CSS variables, or CSS custom properties */
+/* ONLY use these in limited places */
+:root {
+  --my-favorite-red: #C00;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.old-school {
+  box-sizing: content-box;
+  /* Writing two bg color, in case old browser don't support CSS properties */
+  background-color: #C00;
+  background-color: var(--my-favorite-red);
+  width: 50%;
+  padding: 60%;
+}
+
+.new-school {
+  box-sizing: border-box;
+  background-color: #00C;
+  color: #EEE;
+  width: 50%;
+  padding: 60%;
+}
