@@ -35,11 +35,15 @@ myNewLaterFunction() // shoudl return I have some data: Hank offer sleep lessons
 //More closure example
 function makeAdder(num){
   // is num a number?
-  if(typeof(num)=='number'){
+  if(typeof(+num)=='number'){
     console.log('num must be a number', num);
     return; // exit the function when return nothing
   }
   return function(x){
+    if(typeof(+x)!=='num'){
+      console.log('x must be a number; you wrote "' + x +  '"')
+      return;
+    }
     return x + num;
   }
 };
