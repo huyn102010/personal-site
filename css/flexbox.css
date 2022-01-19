@@ -1,0 +1,27 @@
+/* reset */
+
+
+/* Flexbox is content oriented */
+
+*{
+  box-sizing: border-box;
+}
+html {
+ font-size: 22px;
+ line-height: 18px;
+ padding: 22px;
+
+}
+
+.hank {
+  display: flex;
+}
+
+figure {
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  /* flex values: 1 means yes you can grow, 0 means you cannot shrink, and you have to be at least 260px */
+  /* Shoudl convert 260px to em unit, so here 260/22 (font-size) to accomodate when zooming in */
+  flex: 1 0 260px;
+}
