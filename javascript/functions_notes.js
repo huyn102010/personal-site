@@ -46,7 +46,7 @@ function makeAdder(num){
       console.log('x must be a number; you wrote "' + x +  '"')
       return;
     }
-    return x + num;
+    return forcedX + forcedNum;
   }
 };
 var addTwo = makeAdder(2);
